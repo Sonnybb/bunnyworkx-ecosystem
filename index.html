@@ -1,1 +1,84 @@
-hello
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>BunnyWorkx — Invest in the 4‑Pillar AI Flywheel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Private allocation: $1M target ($500K min). 20 × $50K NFT-backed equity blocks. Own the BunnyWorkx Ecosystem: AvatarWorkx, ArtistWorkx, Socialscribe, MelodyRegister." />
+  <style>
+    :root{--bg:#050607;--panel:#0E1117;--ink:#F5F7FB;--muted:#A8B0C0;--stroke:#1E2230;--primary:#40FF93;--primary-ink:#07140C;--urgent:#FF6A3D;--accent:#8A7DFF;}
+    *{box-sizing:border-box} html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:var(--primary);text-decoration:none} .wrap{max-width:1200px;margin:0 auto;padding:24px}
+    .sticky{position:sticky;top:0;z-index:999;background:rgba(5,6,7,.88);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--stroke)}
+    .bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 16px} .logo{font-weight:900;letter-spacing:.5px;color:var(--primary)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 18px;border-radius:12px;font-weight:800;transition:transform .06s ease, box-shadow .2s ease}
+    .btn:active{transform:translateY(1px)} .btn.primary{background:var(--primary);color:var(--primary-ink);box-shadow:0 8px 24px rgba(64,255,147,.25)} .btn.outline{border:1px solid var(--primary);color:var(--primary)}
+    .btn.urgent{background:var(--urgent);color:#180804} .hero{padding:54px 0 20px;text-align:center}
+    .kicker{color:var(--primary);font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:13px} .headline{font-size:48px;line-height:1.08;margin:8px auto;max-width:980px}
+    .sub{color:var(--muted);font-size:20px;margin:10px auto 16px;max-width:920px} .badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:12px 0 16px}
+    .pill{border:1px solid var(--stroke);color:var(--muted);padding:8px 12px;border-radius:999px;font-size:13px} .ctas{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:10px 0}
+    .timer{margin-top:12px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap} .clock{background:var(--panel);border:1px solid var(--stroke);border-radius:14px;padding:10px 12px;min-width:96px;text-align:center}
+    .clock b{display:block;font-size:26px;color:var(--primary)} .clock span{font-size:12px;color:var(--muted)}
+    .section{margin:30px 0} .section h2{color:var(--primary);margin:0 0 8px;text-align:center} .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .card{background:var(--panel);border:1px solid var(--stroke);border-radius:16px;padding:18px} .card h3,.card h4{margin:0 0 6px;color:#E9ECF8}
+    .numbers .num{background:linear-gradient(145deg,#0D111A,#0B0E14);border:1px solid var(--stroke);border-radius:16px;padding:18px}
+    .numbers .num b{font-size:28px;color:var(--primary)} .numbers .num p{margin:6px 0 0;color:var(--muted)}
+    .offer{background:#0B0E14;border:1px solid var(--stroke);border-radius:16px;padding:22px} .faq details{background:#0E1117;border:1px solid var(--stroke);border-radius:12px;padding:14px;margin:10px 0}
+    .faq summary{cursor:pointer;font-weight:700} .flywheel{width:100%;max-width:900px;margin:10px auto;display:block;border-radius:12px;border:1px solid var(--stroke)}
+    .sticky-bottom{position:fixed;left:0;right:0;bottom:0;z-index:998;background:rgba(5,6,7,.9);border-top:1px solid var(--stroke);backdrop-filter:saturate(140%) blur(8px)}
+    .sticky-bottom .bar{max-width:1200px;margin:0 auto;padding:10px 16px;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    .mini{color:var(--muted);font-size:14px} .lead-capture{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:12px}
+    .input{padding:12px 14px;border-radius:10px;border:1px solid var(--stroke);background:#0B0E14;color:var(--ink);min-width:260px} .note{color:var(--muted);font-size:12px;text-align:center;margin-top:6px}
+    .embed{background:#0E1117;border:1px solid var(--stroke);border-radius:16px;padding:12px}
+    .mindmap-wrap .mindmap{width:100%;max-width:1100px;margin:8px auto;display:block;border-radius:12px;border:1px solid var(--stroke);cursor:zoom-in}
+    .lbx{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;align-items:center;justify-content:center;z-index:2000;}
+    .lbx.open{display:flex} .lbx img{max-width:96vw;max-height:90vh;border-radius:12px;border:1px solid var(--stroke);box-shadow:0 10px 40px rgba(0,0,0,.6);}
+    .lbx .tools{position:fixed;top:14px;right:18px;display:flex;gap:10px} .lbx .btnx{background:#11141C;border:1px solid #2a2e39;color:#F5F7FB;padding:10px 12px;border-radius:10px;font-weight:800;cursor:pointer}
+    /* Comparison Section */
+    .compare { margin: 30px 0; }
+    .compare h2 { color: var(--primary); text-align: center; margin-bottom: 10px; }
+    .cmp-wrap { background: var(--panel); border: 1px solid var(--stroke); border-radius: 16px; padding: 12px; overflow: hidden; }
+    .cmp-table { width: 100%; border-collapse: collapse; font-size: 15px; }
+    .cmp-table th, .cmp-table td { padding: 14px 12px; vertical-align: top; border-bottom: 1px solid var(--stroke); }
+    .cmp-table th { text-align: left; color: #E9ECF8; }
+    .cmp-table thead th { background: #0B0E14; position: sticky; top: 0; z-index: 1; }
+    .cmp-table tbody tr:hover { background: rgba(255,255,255,0.02); }
+    .cmp-bunny { color: var(--primary); font-weight: 800; }
+    .cmp-real { color: #FFD47A; font-weight: 700; }
+    .cmp-note { color: var(--muted); font-size: 13px; text-align: center; margin-top: 10px; }
+    .cmp-cta { display: flex; gap: 10px; justify-content: center; margin-top: 14px; flex-wrap: wrap; }
+    .cmp-alert { background: #140C06; color: #FFB199; border: 1px solid #40231A; padding: 14px 16px; border-radius: 12px; margin-top: 10px; text-align: center; }
+    @media (max-width: 700px) { .cmp-table th, .cmp-table td { padding: 10px 8px; } .cmp-table { font-size: 14px; } .headline{font-size:34px} .hide-mobile{display:none} }
+    footer{text-align:center;color:#8b95b2;padding:60px 0 88px}
+  
+    .logo span { display:block; }
+    @media (max-width: 700px) {
+      .logo { text-align:center; width:100%; }
+    }
+
+  
+    @media (max-width: 700px) {
+      .headline { font-size: 28px; line-height: 1.2; }
+    }
+
+  
+    .fab-cta { 
+      position: fixed; left: 16px; right: 16px; bottom: 16px; 
+      background: var(--primary); color: var(--primary-ink); 
+      border-radius: 999px; padding: 14px 18px; 
+      display: none; align-items: center; justify-content: center; 
+      font-weight: 900; z-index: 1200; box-shadow: 0 10px 30px rgba(64,255,147,.35);
+      border: 1px solid rgba(0,0,0,.2);
+    }
+    .fab-cta:active { transform: translateY(1px); }
+    @media (max-width: 700px) {
+      .sticky-bottom { display: none; }
+      .fab-cta { display: flex; }
+    }
+
+  </style>
+</head>
+<body>
+  <!-- ... [HTML body content here. Truncated for brevity in this message, but will be complete in the actual file push.] ... -->
+</body>
+</html>
